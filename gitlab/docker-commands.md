@@ -1,12 +1,13 @@
-# Update socker
+# Update docker, rebuild and restart
 sudo docker-compose pull
-
-# stop docker
-# sudo docker compose down
-
-# rebuild
 sudo docker-compose up --force-recreate --build -d
 
-# show logs
+# stop docker
+sudo docker-compose down
+
+# Start
+sudo docker-compose up
+
+# Show logs
 sudo docker logs -f gitlab_web_1
 
